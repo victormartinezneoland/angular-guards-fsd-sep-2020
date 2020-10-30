@@ -1,0 +1,44 @@
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-t-50 p-b-90">
+            <form autocomplete="off" class="login100-form validate-form flex-sb flex-w"
+                (ngSubmit)="login(formdata)"
+                #formdata="ngForm"
+            >
+                <span class="login100-form titl p-b-51 font-weight-bold" style="font-size: 30px;">
+                    Login
+                </span>
+                <div class="wrap-input100 m-b-16">
+                    <input
+                        class="input100"
+                        type="text"
+                        name="email"
+                        [(ngModel)]="user.email"
+                        placeholder="Escribe tu email"
+                    >
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 m-b-16">
+                    <input
+                        class="input100"
+                        type="password"
+                        name="password"
+                        [(ngModel)]="user.password"
+                        placeholder="Escribe tu contraseña"
+                    >
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn m-t-17">
+                    <button class="btn btn-block btn-primary" type="submit">
+                        Entrar
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
